@@ -10,7 +10,7 @@ A restaurant ordering platform with QR code ordering, real time updates, and a m
 
 This project's original codebase and structure were created by **[roshanx0](https://github.com/roshanx0)**, released under the **MIT License**.
 
-Our team used this as our technical foundation. In line with the license terms and with confirmation from the VibeAthon 6.0 organizing team that a licensed open-source base is acceptable when clearly credited and extended, we built on top of it as described below.
+Our team used this as our technical foundation.In line with the MIT license terms, which permit reuse with attribution, we built on top of it as described below. We also proactively reached out to the VibeAthon 6.0 organizers to confirm this approach was acceptable and be fully transparent about it.
 
 - **License:** MIT License (see `LICENSE` file in this repo)
 
