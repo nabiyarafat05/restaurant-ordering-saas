@@ -107,7 +107,11 @@ const RegisterPage: React.FC = () => {
           },
         ])
         .select();
-
+        if (insertError) {
+         console.log(insertError);
+          alert(insertError.message);
+          }
+        
       if (insertError) {
         throw insertError;
       }

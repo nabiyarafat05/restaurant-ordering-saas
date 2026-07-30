@@ -57,7 +57,9 @@ const LandingPage: React.FC = () => {
                 Login
               </Link>
               <Link to="/register">
-                <Button size="sm">Get Started</Button>
+                <Button size="sm" className="transition-all duration-300 hover:scale-105">
+                  Get Started
+                </Button>
               </Link>
             </div>
 
@@ -106,7 +108,9 @@ const LandingPage: React.FC = () => {
                 Login
               </Link>
               <Link to="/register" onClick={() => setMobileMenuOpen(false)}>
-                <Button fullWidth>Get Started</Button>
+                <Button fullWidth className="transition-all duration-300 hover:scale-105">
+                  Get Started
+                </Button>
               </Link>
             </div>
           )}
@@ -117,7 +121,7 @@ const LandingPage: React.FC = () => {
       <section className="py-20 md:py-32 overflow-hidden">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-text mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-text mb-6">
               Digitize Your Restaurant
               <br />
               in Minutes
@@ -129,12 +133,20 @@ const LandingPage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/register">
-                <Button size="lg" icon={<ArrowRight className="w-5 h-5" />}>
+                <Button
+  size="lg"
+  icon={<ArrowRight className="w-5 h-5" />}
+  className="transition-all duration-300 hover:scale-105"
+>
                   Start Free Trial
                 </Button>
               </Link>
               <a href="#how-it-works">
-                <Button size="lg" variant="outline">
+                <Button
+  size="lg"
+  variant="outline"
+  className="transition-all duration-300 hover:scale-105"
+>
                   See How it Works
                 </Button>
               </a>
@@ -205,8 +217,11 @@ const LandingPage: React.FC = () => {
                   "No more taking orders manually. Focus on cooking and serving",
               },
             ].map((feature, index) => (
-              <div key={index} className="card text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/5 mb-4">
+              <div
+                   key={index}
+  className="card text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+>
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full transition-all duration-300 group-hover:scale-110">
                   <feature.icon className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="text-lg font-semibold text-text mb-2">
@@ -344,12 +359,12 @@ const LandingPage: React.FC = () => {
             </p>
             <Link to="/register">
               <Button
-                size="lg"
-                variant="outline"
-                className="bg-white text-accent hover:bg-white/90"
-              >
-                Get Started for Free
-              </Button>
+  size="lg"
+  variant="outline"
+  className="bg-white text-black hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+>
+  Get Started for Free
+</Button>
             </Link>
           </div>
         </div>

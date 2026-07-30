@@ -21,6 +21,8 @@ import {
   subscribeToMenuItems,
   createOrder,
 } from "../../services/restaurantService";
+import AIMenuAssistant from "../../components/AIMenuAssistant";
+
 import type { MenuItem } from "../../config/supabase";
 import { formatCurrency, isValidPhone } from "../../utils/helpers";
 import { supabase } from "../../config/supabase";
@@ -258,6 +260,13 @@ const CustomerMenu: React.FC = () => {
       </div>
 
       {/* Menu Grid */}
+    {/* AI Menu Assistant */}
+<div className="max-w-screen-lg mx-auto px-4 py-4">
+  <AIMenuAssistant />
+</div>
+
+{/* Menu Grid */}
+<div className="max-w-screen-lg mx-auto px-4 py-4"></div>
       <div className="max-w-screen-lg mx-auto px-4 py-4">
         {filteredItems.length === 0 ? (
           <div className="text-center py-20">
